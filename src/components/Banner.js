@@ -14,7 +14,7 @@ function Banner() {
       const request = await fetch(
         // "https://backendnetflixclone.herokuapp.com/load-movies-banner"
         // "http://localhost:3000/load-movies-banner",
-        "http://35.170.203.18:3000/load-movies-banner",
+        "http://172.20.3.190:3000/load-movies-banner",
         {
           method: "GET",
 
