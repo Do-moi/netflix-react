@@ -13,7 +13,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       const resultsRequest = await fetch(
         // `https://backendnetflixclone.herokuapp.com/load-movies-pictures?url=${fetchUrl}`
         // `http://localhost:3000/load-movies-pictures?url=${fetchUrl}`
-        `http://50.18.239.115:3000/load-movies-pictures?url=${fetchUrl}`
+        `http://172.20.1.236:3000/load-movies-pictures?url=${fetchUrl}`
       );
       const resultsJson = await resultsRequest.json();
       setMovies(resultsJson.backendReturn);
@@ -25,7 +25,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     let request = await fetch(
       // `https://backendnetflixclone.herokuapp.com/video?id=${movie.id}`
       // `http://localhost:3000/video?id=${movie.id}`
-      `http://50.18.239.115:3000/video?id=${movie.id}`
+      `http://172.20.1.236:3000/video?id=${movie.id}`
     );
     const resultsJson = await request.json();
 
