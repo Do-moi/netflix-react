@@ -13,8 +13,8 @@ function Banner() {
     async function fetchData() {
       const request = await fetch(
         // "https://backendnetflixclone.herokuapp.com/load-movies-banner"
-        // "http://localhost:3000/load-movies-banner",
-        "http://172.20.1.236:3000/load-movies-banner",
+        "http://localhost:4000/load-movies-banner",
+        // "http://172.20.1.236:3000/load-movies-banner",
         {
           method: "GET",
 
